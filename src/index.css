@@ -79,9 +79,12 @@
   color: var(--orange);
 }
 
+.app {
+  background-color: var(--beige);
+  min-height: 100vh;
+}
+
 .page {
-  background-color: var(--pink-beige);
-  height: 100vh;
 }
 
 .d-none {
