@@ -8,7 +8,7 @@ function Navigation() {
         <li className="nav__list-item heading-4">
           <NavLink
             to={"/"}
-            className={({ isActive }) => (isActive ? "font-color-black nav__list-item-active" : " font-color-black nav__list-item-link")}
+            className={({ isActive }) => (isActive ? "font-color-pink nav__list-item-active" : " font-color-beige nav__list-item-link")}
           >
             Start
           </NavLink>
@@ -16,7 +16,7 @@ function Navigation() {
         <li className="nav__list-item heading-4">
           <NavLink
             to={"/cv"}
-            className={({ isActive }) => (isActive ? "font-color-black nav__list-item-active" : " font-color-black nav__list-item-link")}
+            className={({ isActive }) => (isActive ? "font-color-pink nav__list-item-active" : " font-color-beige nav__list-item-link")}
           >
             CV
           </NavLink>
@@ -24,7 +24,7 @@ function Navigation() {
         <li className="nav__list-item heading-4">
           <NavLink
             to={"/kontakt"}
-            className={({ isActive }) => (isActive ? "font-color-black nav__list-item-active" : " font-color-black nav__list-item-link")}
+            className={({ isActive }) => (isActive ? "font-color-pink nav__list-item-active" : " font-color-beige nav__list-item-link")}
           >
             Kontakt
           </NavLink>

@@ -10,12 +10,12 @@ function Header() {
         className=" header__left
 "
       >
-        <img src="./public/klara-sköld.jpg" alt="Klara Sköld" className="header__img" />
+        <img src="/klara-sköld.jpg" alt="Klara Sköld" className="header__img" />
       </section>
       <section className="grid header__right">
         <Navigation />
-        <h2 className="heading-2 font-color-black header__text">
-          <span className="heading-1 font-color-beige font-color--stroke heading__hej">Hej!</span>
+        <h2 className="heading-2 font-color-beige header__text">
+          <span className="heading-1 font-color-pink font-color--stroke heading__hej">Hej!</span>
           <br />
           Jag heter Klara. Webbutvecklare vars{" "}
           <motion.span
@@ -31,7 +31,7 @@ function Header() {
             <FaHeart
               style={{ transformBox: "fill-box", transformOrigin: "center" }}
               size={22}
-              color="var(--beige)"
+              color="var(--pink)"
               role="img"
               aria-label="hjärta"
             />

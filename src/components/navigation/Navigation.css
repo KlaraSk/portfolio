@@ -10,6 +10,7 @@
 
 .nav__list-item {
   cursor: pointer;
+  /* padding-bottom: 0.25rem; */
 }
 
 .nav__list-item-active {
@@ -21,17 +22,18 @@
   content: "";
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -4px;
   height: 2.5px;
   width: 100%;
   border-radius: 50px;
-  background-color: var(--black);
+  background-color: var(--pink);
   transform-origin: left;
 }
 
 .nav__list-item-link {
   text-decoration: none;
   position: relative;
+  padding-bottom: 0.25rem;
 }
 
 .nav__list-item-link:hover {
@@ -43,10 +45,11 @@
   position: absolute;
   left: 0;
   bottom: 0;
+
   height: 2.5px;
   width: 100%;
   border-radius: 50px;
-  background-color: var(--black);
+  background-color: var(--beige-2);
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;

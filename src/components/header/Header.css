@@ -11,7 +11,7 @@
 }
 
 .header__right {
-  background-color: var(--orange);
+  background-color: var(--dark-green);
   height: 100%;
   place-items: center;
   position: relative;
