@@ -1,6 +1,6 @@
 .footer {
   width: 100%;
-  background-color: var(--black);
+  background-color: var(--beige-2);
 }
 
 .footer__nav {
@@ -13,6 +13,6 @@
 }
 
 .footer__icon {
-  color: var(--orange);
+  color: var(--light-green);
   font-size: 3rem;
 }

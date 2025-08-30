@@ -1,0 +1,20 @@
+.home-page {
+  justify-content: space-between;
+}
+
+.home-page__test-section {
+  width: 100vw;
+  padding: 4rem 0rem;
+}
+
+.home-page__test-left {
+  background-color: var(--dark-green);
+  flex: 1;
+  color: var(--beige-2);
+  padding: 5rem 2rem;
+}
+.home-page__test-right {
+  background-color: var(--pink);
+  flex: 1;
+  padding: 5rem 2rem;
+}
