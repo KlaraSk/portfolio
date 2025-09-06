@@ -30,7 +30,7 @@
 /* ===== Text displayed while hovering ===== */
 .cards-list__item-info {
   background-color: rgba(11, 43, 43, 0.93);
-  color: var(--beige-2);
+  color: var(--beige);
   z-index: 1;
   position: absolute;
   left: 50%;
@@ -84,7 +84,7 @@
 }
 
 .cards-list__category {
-  border: 0.9px solid var(--beige-2);
+  border: 0.9px solid var(--beige);
   border-radius: 4px;
   padding: 0.15rem 0.5rem;
   opacity: 0;

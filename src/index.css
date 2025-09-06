@@ -7,22 +7,16 @@
   padding: 0;
   box-sizing: border-box;
   list-style: none;
+  list-style-position: inside;
   /* outline: 1pt solid greenyellow; */
 }
 
 /* ===== Variables ===== */
-
 :root {
   /* Colors */
-  --orange: #fa8603;
-  --red: #bb2233;
-  --beige: #fae3cf;
-  --black: #0a0f24;
-  --pink-beige: #fff0f0;
-
   --light-green: #145f40;
   --dark-green: #0b2b2b;
-  --beige-2: #ecdcc3;
+  --beige: #ecdcc3;
   --pink: #ffb2c1;
   --shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
 
@@ -45,7 +39,7 @@
   --weight-bold: 700;
 
   --gap: 25px;
-  --primary-clr: var(--beige-2);
+  --primary-clr: var(--beige);
   --accent-clr: var(--pink);
 }
 
@@ -89,7 +83,7 @@
 }
 
 .font-color-beige {
-  color: var(--beige-2);
+  color: var(--beige);
 }
 
 .font-color-black {
@@ -98,13 +92,17 @@
 .font-color-pink {
   color: var(--pink);
 }
+.font-color-light-green {
+  color: var(--light-green);
+}
 
+/* ===== General ===== */
 .app {
-  background-color: var(--beige-2);
+  background-color: var(--beige);
   min-height: 100vh;
   display: grid;
   grid-template-rows: auto 1fr auto;
-  max-width: 100vw;
+  width: 100vw;
 }
 
 .page {

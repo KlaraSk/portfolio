@@ -8,7 +8,7 @@ export const StyledButton = styled.button`
 `;
 
 export const BasicButton = styled(StyledButton)`
-  border: 2px solid var(--dark-green);
+  border: 3.5px solid var(--dark-green);
   border-radius: 4px;
   color: var(--dark-green);
   font-family: var(--montserrat);
@@ -18,7 +18,19 @@ export const BasicButton = styled(StyledButton)`
 
   &:hover {
     background-color: var(--dark-green);
-    color: var(--beige-2);
+    color: var(--beige);
+    box-shadow: var(--shadow);
+    transform: translateY(-2px);
+  }
+`;
+
+export const BasicButtonLightGreen = styled(BasicButton)`
+  border: 3.5px solid var(--light-green);
+  color: var(--light-green);
+
+  &:hover {
+    background-color: var(--light-green);
+    color: var(--beige);
     box-shadow: var(--shadow);
     transform: translateY(-2px);
   }

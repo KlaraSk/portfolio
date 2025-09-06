@@ -1,0 +1,17 @@
+.info-section {
+  flex: 1;
+  padding: 4rem 3rem;
+}
+
+.info-section__top-section {
+  background-color: var(--dark-green);
+  color: var(--beige);
+}
+
+.info-section__bottom-section {
+  background-color: var(--pink);
+}
+
+.info-section__heading {
+  margin-bottom: 1rem;
+}
