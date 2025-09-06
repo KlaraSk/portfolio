@@ -1,6 +1,6 @@
 import "./CardsList.css";
 import { CardButton } from "../../components-styled/button/Button.styles";
-import { projects } from "../../projects";
+import { projects } from "../../data/projects.js";
 
 function CardsList({ title }) {
   const generateCategories = (project) => {

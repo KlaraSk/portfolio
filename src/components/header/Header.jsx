@@ -10,7 +10,7 @@ function Header() {
         className=" header__left
 "
       >
-        <img src="/klara-sköld.jpg" alt="Klara Sköld" className="header__img" />
+        <img src="src/assets/profile-image/IMG_3576.jpg" alt="Klara Sköld" className="header__img" />
       </section>
       <section className="grid header__right">
         <Navigation />

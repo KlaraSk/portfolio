@@ -1,0 +1,19 @@
+.logos {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.logos__logo {
+  font-size: 2.75rem;
+}
+
+@media screen and (max-width: 992px) {
+  .logos {
+    grid-column: 1;
+    grid-row: auto;
+    margin-top: 3rem;
+  }
+}
