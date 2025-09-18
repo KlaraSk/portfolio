@@ -1,0 +1,36 @@
+.contact {
+  gap: 5rem;
+}
+
+.contact__top {
+  flex: 1;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.contact__top--justify-flex-start {
+  justify-content: flex-start;
+}
+
+.contact__bottom {
+  flex: 1;
+}
+
+.contact__gif {
+  width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+  .contact {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .link__button {
+    width: 100%;
+  }
+
+  .contact__gif {
+    display: none;
+  }
+}

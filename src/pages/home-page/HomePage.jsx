@@ -8,7 +8,7 @@ import Logos from "../../components/logos/Logos.jsx";
 
 function HomePage() {
   const generateQuestions = () => {
-    return thisOrThatQuestions.map((obj) => <ThisOrThat obj={obj} />);
+    return thisOrThatQuestions.map((obj) => <ThisOrThat obj={obj} key={obj.that} />);
   };
 
   return (

@@ -18,6 +18,7 @@
   --dark-green: #0b2b2b;
   --beige: #ecdcc3;
   --pink: #ffb2c1;
+  --dark-pink: #99334c;
   --shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
 
   /* Fonts */
@@ -109,6 +110,10 @@
   height: 100%;
 }
 
+.page__wrapper {
+  padding: 4.5rem 2rem;
+}
+
 .d-none {
   display: none;
 }
@@ -139,4 +144,28 @@
 
 .grid__center {
   place-items: center;
+}
+
+/* ===== Link styled as button ===== */
+
+.link__button {
+  background-color: var(--light-green);
+  text-decoration: none;
+  text-align: center;
+  padding: 8px 10px;
+  color: var(--beige);
+  border-radius: 4px;
+  font-family: var(--montserrat);
+  font-size: var(--fs-sm);
+  font-weight: var(--weight-bold);
+  border: 3.5px solid var(--light-green);
+  width: 35%;
+
+  &:hover {
+    background-color: var(--beige);
+    color: var(--light-green);
+    border: 3.5px dashed var(--light-green);
+    box-shadow: var(--shadow);
+    transform: translateY(-2px);
+  }
 }
