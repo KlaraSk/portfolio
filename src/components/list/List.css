@@ -1,0 +1,19 @@
+.list {
+  gap: 2.5rem;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 2rem;
+}
+
+.list__title {
+  text-align: center;
+}
+
+@media screen and (max-width: 992px) {
+  .list {
+    grid-template-columns: 1fr;
+  }
+
+  .list__title {
+    text-align: left;
+  }
+}

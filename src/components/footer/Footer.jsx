@@ -2,6 +2,7 @@ import "./Footer.css";
 import { FaSquareGithub } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import { IoMail } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -19,9 +20,12 @@ function Footer() {
             </a>
           </li>
           <li>
-            <a href="https://se.linkedin.com/in/klaraskold" target="_blank" rel="noopener noreferrer">
+            <Link to={"/kontakt"}>
               <IoMail className="footer__icon" />
-            </a>
+            </Link>
+            {/* <a href="https://se.linkedin.com/in/klaraskold" target="_blank" rel="noopener noreferrer">
+              <IoMail className="footer__icon" />
+            </a> */}
           </li>
         </ul>
       </nav>
