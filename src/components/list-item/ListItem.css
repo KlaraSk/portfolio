@@ -1,3 +1,8 @@
-.list__item {
+.list-item {
+  gap: 0.5rem;
+}
+
+.list-item__div {
+  align-items: first baseline;
   gap: 0.25rem;
 }

@@ -1,3 +1,37 @@
 .cv-page {
+  gap: 6rem;
+}
+
+.cv-page__heading {
+  text-align: center;
+}
+
+.cv-page__educations-section {
   gap: 5rem;
+}
+
+.test {
+  text-align: center;
+}
+
+.cv-page__quote {
+  font-size: 5rem;
+  font-family: sans-serif;
+  font-weight: 800;
+  line-height: 1.5rem;
+}
+
+.cv-page__top5List {
+  /* list-style-position: outside; */
+}
+
+.cv-page__top5List-item {
+  list-style: decimal;
+  list-style-position: inside;
+}
+
+.cv-page__hobby,
+.cv-page__list-item-bullet {
+  list-style: disc;
+  list-style-position: inside;
 }

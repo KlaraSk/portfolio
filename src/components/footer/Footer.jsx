@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <footer className=" footer text-color-orange">
+    <footer className=" footer">
       <nav className="flex footer__nav">
         <ul className="flex footer__list">
           <li>
@@ -23,9 +23,6 @@ function Footer() {
             <Link to={"/kontakt"}>
               <IoMail className="footer__icon" />
             </Link>
-            {/* <a href="https://se.linkedin.com/in/klaraskold" target="_blank" rel="noopener noreferrer">
-              <IoMail className="footer__icon" />
-            </a> */}
           </li>
         </ul>
       </nav>

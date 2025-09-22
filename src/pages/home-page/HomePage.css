@@ -2,10 +2,6 @@
   justify-content: space-between;
 }
 
-.home-page__info-sections {
-  margin: 5rem 0rem;
-}
-
 .home-page__cv-text {
   grid-template-columns: 1fr 1fr;
   column-gap: 2.25rem;
@@ -15,49 +11,7 @@
   margin-top: 1.5rem;
 }
 
-/* Reset input baseline */
-input[type="range"] {
-  -webkit-appearance: none;
-  appearance: none;
-  background: transparent;
-  cursor: pointer;
-  width: 15rem;
-}
-
-/***** Track Styles *****/
-/***** Chrome, Safari, Opera, and Edge Chromium *****/
-input[type="range"]::-webkit-slider-runnable-track {
-  background: var(--beige);
-  height: 2px;
-  margin: 0rem 1rem;
-  border: 1px solid var(--beige);
-}
-
-input[type="range"]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  height: 15px;
-  width: 15px;
-  margin-top: -7px;
-  background: url(src/assets/heart.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-/******** Firefox ********/
-input[type="range"]::-moz-range-track {
-  background: var(--beige);
-  height: 0.1rem;
-  margin: 0rem 1rem;
-}
-
 @media screen and (max-width: 992px) {
-  .home-page__info-sections {
-    flex-direction: column;
-    gap: 5rem;
-  }
-
   .home-page__cv-text {
     grid-template-columns: 1fr;
   }

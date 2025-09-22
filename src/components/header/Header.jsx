@@ -2,14 +2,12 @@ import Navigation from "../navigation/Navigation";
 import "./Header.css";
 import { FaHeart } from "react-icons/fa";
 import { motion } from "framer-motion";
+import { p } from "framer-motion/client";
 
 function Header() {
   return (
     <header className="grid header">
-      <section
-        className=" header__left
-"
-      >
+      <section className=" header__left">
         <img src="src/assets/profile-image/IMG_3576.jpg" alt="Klara Sköld" className="header__img" />
       </section>
       <section className="grid header__right">

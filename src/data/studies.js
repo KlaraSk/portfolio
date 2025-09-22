@@ -43,13 +43,13 @@ export const courses = [
   },
   {
     title: "Grafisk produktion 7,5 hp",
-    about: "En kurs inom tryckproduktion",
+    about: "En kurs inom tryckproduktion.",
     organisation: "Högskolan i Halmstad",
     years: "HT 2013",
   },
   {
     title: "Grafisk form och foto 15hp",
-    about: "Grunder inom fotografering samt grafisk formgivning",
+    about: "Grunder inom fotografering samt grafisk formgivning.",
     organisation: "Karlstads universitet",
     years: "HT 2013",
   },
