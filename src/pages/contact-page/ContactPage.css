@@ -1,11 +1,11 @@
 .contact {
-  gap: 5rem;
+  column-gap: 4rem;
 }
 
 .contact__top {
   flex: 1;
-  justify-content: space-between;
-  gap: 1.5rem;
+  row-gap: 3rem;
+  margin: 1rem 0rem 2rem 0rem;
 }
 
 .contact__top--justify-flex-start {

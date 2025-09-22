@@ -1,0 +1,10 @@
+.info-sections {
+  /* margin: 3rem 0rem; */
+}
+
+@media screen and (max-width: 992px) {
+  .info-sections {
+    flex-direction: column;
+    /* row-gap: 5rem; */
+  }
+}

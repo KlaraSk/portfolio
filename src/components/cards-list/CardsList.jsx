@@ -12,7 +12,7 @@ function CardsList({ title }) {
   };
 
   return (
-    <section className=" cards-list__section">
+    <section className="cards-list__section">
       <h2 className="heading-2 font-color-beige cards-list__title">{title}</h2>
       <ul className="grid cards-list">
         {projects.map((project) => {

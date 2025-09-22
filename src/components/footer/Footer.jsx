@@ -2,10 +2,11 @@ import "./Footer.css";
 import { FaSquareGithub } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import { IoMail } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <footer className=" footer text-color-orange">
+    <footer className=" footer">
       <nav className="flex footer__nav">
         <ul className="flex footer__list">
           <li>
@@ -19,9 +20,9 @@ function Footer() {
             </a>
           </li>
           <li>
-            <a href="https://se.linkedin.com/in/klaraskold" target="_blank" rel="noopener noreferrer">
+            <Link to={"/kontakt"}>
               <IoMail className="footer__icon" />
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>

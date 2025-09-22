@@ -1,16 +1,15 @@
 import clsx from "clsx";
 import "./InfoSection.css";
 
-function InfoSection({ title, children, isTopSection }) {
-  const classNames = clsx("info-section", {
-    "info-section__top-section": isTopSection,
-    "flex flex__column info-section__bottom-section": !isTopSection,
+function InfoSection({ title, children, isDarkGreen, isLightGreen, isDarkPink, isLightPink }) {
+  const classNames = clsx("info-section font-color-black", {
+    "info-section__dark-green": isDarkGreen,
+    "info-section__light-green": isLightGreen,
+    "info-section__dark-pink": isDarkPink,
+    "info-section__light-pink": isLightPink,
   });
 
-  const headingClasses = clsx("heading-4 info-section__heading ", {
-    "font-color-beige info-section__heading-left": isTopSection,
-    "font-color-light-green": !isTopSection,
-  });
+  const headingClasses = clsx("heading-3 info-section__heading", {});
 
   return (
     <section className={classNames}>

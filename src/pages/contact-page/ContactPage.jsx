@@ -1,7 +1,6 @@
 import "./ContactPage.css";
 import ContactForm from "../../components/contact-form/ContactForm";
 import { useState } from "react";
-import { ButtonSolid } from "../../components-styled/button/Button.styles";
 import { Link } from "react-router-dom";
 import clsx from "clsx";
 
@@ -11,12 +10,12 @@ function ContactPage() {
   const contactTopClassNames = clsx("flex", "flex__column", "contact__top", { "contact__top--justify-flex-start": isSent });
 
   return (
-    <section className="flex page page__wrapper font-color-black contact">
+    <section className="flex flex__column page page__wrapper font-color-black contact">
+      <h2 className="heading-2">{!isSent ? "Kontakta mig" : "Tack för ditt meddelande"}</h2>
       <section className={contactTopClassNames}>
-        <h2 className="heading-2">{!isSent ? "Kontakta mig" : "Tack för ditt meddelande"}</h2>
         <p className="body">
           {!isSent
-            ? "Jag söker praktikplats inför vårterminen 2026. Har du tips på företag som tar emot LIA-studenter eller kanske en idé om något kul samarbete? Hör gärna av dig så pratar vi mer!"
+            ? "Jag söker praktikplats inför vårterminen 2026. Har du tips på företag som tar emot LIA-studenter eller kanske en idé om ett samarbete? Kul! Hör av dig så pratar vi mer!"
             : "Jag återkopplar till dig inom kort. Vi hörs!"}
         </p>
         {isSent && (
@@ -26,7 +25,6 @@ function ContactPage() {
         )}
         {!isSent && <ContactForm isSent={isSent} setIsSent={setIsSent} />}
       </section>
-
       <section className="contact__bottom">
         <img
           className="contact__gif"
