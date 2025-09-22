@@ -1,0 +1,33 @@
+import "./Footer.css";
+import { FaSquareGithub } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa";
+import { IoMail } from "react-icons/io5";
+import { Link } from "react-router-dom";
+
+function Footer() {
+  return (
+    <footer className=" footer">
+      <nav className="flex footer__nav">
+        <ul className="flex footer__list">
+          <li>
+            <a href="https://github.com/KlaraSk" target="_blank" rel="noopener noreferrer">
+              <FaSquareGithub className="footer__icon" />
+            </a>
+          </li>
+          <li>
+            <a href="https://linkedin.com/in/klaraskold" target="_blank" rel="noopener noreferrer">
+              <FaLinkedin className="footer__icon" />
+            </a>
+          </li>
+          <li>
+            <Link to={"/kontakt"}>
+              <IoMail className="footer__icon" />
+            </Link>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  );
+}
+
+export default Footer;

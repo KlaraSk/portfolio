@@ -1,0 +1,18 @@
+.home-page {
+  justify-content: space-between;
+}
+
+.home-page__cv-text {
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2.25rem;
+}
+
+.home-page__btn {
+  margin-top: 1.5rem;
+}
+
+@media screen and (max-width: 992px) {
+  .home-page__cv-text {
+    grid-template-columns: 1fr;
+  }
+}

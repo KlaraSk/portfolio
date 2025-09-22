@@ -1,0 +1,6 @@
+.list {
+}
+
+.list__item {
+  list-style-type: disc;
+}
