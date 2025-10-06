@@ -2,7 +2,7 @@ import ListItem from "../list-item/ListItem";
 import "./List.css";
 
 function List({ title, listItems }) {
-  const generateListItem = () => listItems.map((item) => <ListItem listItem={item} />);
+  const generateListItem = () => listItems.map((item, index) => <ListItem key={index} listItem={item} />);
 
   return (
     <section>

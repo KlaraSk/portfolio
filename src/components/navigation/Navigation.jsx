@@ -24,10 +24,6 @@ function Navigation() {
         <li className="nav__list-item heading-3">
           <NavLink
             to={"/kontakt"}
-            onClick={(e) => {
-              e.preventDefault();
-              window.location.href = `${import.meta.env.BASE_URL}kontakt`;
-            }}
             className={({ isActive }) => (isActive ? "font-color-pink nav__list-item-active" : " font-color-beige nav__list-item-link")}
           >
             Kontakt
