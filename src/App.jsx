@@ -6,18 +6,21 @@ import CvPage from "./pages/cv-page/CvPage";
 import ContactPage from "./pages/contact-page/ContactPage";
 
 function App() {
-  const router = createBrowserRouter([
-    {
-      path: `/`,
-      element: <RootLayout />,
-      errorElement: <ErrorPage />,
-      children: [
-        { path: "/", element: <HomePage /> },
-        { path: "/cv", element: <CvPage /> },
-        { path: "/kontakt", element: <ContactPage /> },
-      ],
-    },
-  ]);
+  const router = createBrowserRouter(
+    [
+      {
+        path: `/`,
+        element: <RootLayout />,
+        errorElement: <ErrorPage />,
+        children: [
+          { path: "/", element: <HomePage /> },
+          { path: "/cv", element: <CvPage /> },
+          { path: "/kontakt", element: <ContactPage /> },
+        ],
+      },
+    ],
+    { basename: "/portfolio" }
+  );
   return (
     <div className="app">
       <RouterProvider router={router} />
