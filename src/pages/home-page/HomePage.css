@@ -11,6 +11,12 @@
   margin-top: 1.5rem;
 }
 
+.home-page__this-or-that-div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
 @media screen and (max-width: 992px) {
   .home-page__cv-text {
     grid-template-columns: 1fr;

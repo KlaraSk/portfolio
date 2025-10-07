@@ -43,6 +43,21 @@ export const ButtonSolid = styled(StyledButton)`
   }
 `;
 
+export const ButtonSolidRed = styled(ButtonSolid)`
+  background-color: var(--dark-pink);
+  padding: 1px 2px;
+
+  border: 3.5px solid var(--dark-pink);
+
+  &:hover {
+    background-color: var(--beige);
+    color: var(--dark-pink);
+    border: 2.5px dashed var(--dark-pink);
+    box-shadow: var(--shadow);
+    transform: translateY(-2px);
+  }
+`;
+
 export const BasicButtonLightGreen = styled(BasicButton)`
   border: 3.5px solid var(--light-green);
   color: var(--light-green);
