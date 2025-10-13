@@ -24,7 +24,13 @@ function HomePage() {
         <InfoSection isLightPink={true} title={"Tekniker & skills"}>
           <div className="grid home-page__cv-text">
             <p className="body">Vad är väl en portfolio utan techloggor? Spana gärna in mitt CV om du veta mer om vad jag gör.</p>
-            <BasicButtonLightGreen className="home-page__btn" onClick={() => navigate("/kontakt")}>
+            <BasicButtonLightGreen
+              className="home-page__btn"
+              onClick={() => {
+                navigate("/cv");
+                window.scrollTo(0, 0);
+              }}
+            >
               Gå till CV
             </BasicButtonLightGreen>
             <Logos />
