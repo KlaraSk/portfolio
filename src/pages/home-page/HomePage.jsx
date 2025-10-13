@@ -16,7 +16,7 @@ function HomePage() {
     <section className="page flex flex__column home-page">
       <InfoSectionsSet>
         <InfoSection isDarkGreen={true} title="Fem snabba">
-          {generateQuestions()}
+          {<div className="home-page__this-or-that-div">{generateQuestions()}</div>}
         </InfoSection>
         <InfoSection isLightPink={true} title={"Tekniker & skills"}>
           <div className="grid home-page__cv-text">

@@ -6,6 +6,7 @@
 .cards-list__title {
   text-align: center;
 }
+
 .cards-list {
   margin-top: 2rem;
   gap: 1.5rem;
@@ -89,17 +90,4 @@
   border-radius: 4px;
   padding: 0.15rem 0.5rem;
   opacity: 0;
-}
-
-@media screen and (max-width: 625px) {
-  .cards-list {
-    /* grid-template-columns: 1fr;
-
-    background-color: orange; */
-    /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
-  }
-
-  .cards-list__item {
-    /* min-width: 200px; */
-  }
 }

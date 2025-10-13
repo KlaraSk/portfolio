@@ -1,5 +1,5 @@
 .this-or-that {
-  justify-content: space-between;
+  grid-template-columns: auto 1.75fr auto;
 }
 
 .input__this-span {
@@ -12,7 +12,7 @@ input[type="range"] {
   appearance: none;
   background: transparent;
   cursor: pointer;
-  width: 75%;
+  width: 100%;
 }
 
 /***** Track Styles *****/
@@ -41,4 +41,11 @@ input[type="range"]::-moz-range-track {
   background: var(--beige);
   height: 0.1rem;
   margin: 0rem 1rem;
+}
+
+@media screen and (max-width: 992px) {
+  .this-or-that {
+    grid-template-columns: auto 1.75fr auto;
+    /* background-color: red; */
+  }
 }
