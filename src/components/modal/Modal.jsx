@@ -4,7 +4,6 @@ import clsx from "clsx";
 import { BasicButtonLightGreen, ButtonSolidRed } from "../../components-styled/button/Button.styles";
 import { IoClose } from "react-icons/io5";
 import { FaExternalLinkAlt } from "react-icons/fa";
-import CategoriesList from "../categories-list/CategoriesList";
 
 function Modal({ project, activeId, setActiveId, generateCategories }) {
   const modal = useRef();
