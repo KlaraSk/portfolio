@@ -1,10 +1,5 @@
 /* ===== Modal ===== */
 
-/* body.modal {
-  height: 100vh;
-  overflow-y: hidden;
-} */
-
 .modal {
   position: fixed;
   z-index: 999;
@@ -14,45 +9,59 @@
   left: 0;
   top: 0;
   background-color: rgba(5, 20, 20, 0.85);
+  align-items: center;
+  justify-content: center;
 }
 
 /* Modal Content/Box */
 .modal__content {
   background-color: var(--beige);
-  margin: 15% auto;
-  padding: 2.5rem 2rem;
-  width: 90%;
-
-  /* background-color: rgba(11, 43, 43, 0.93);
-  color: var(--beige);
-  z-index: 2;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 100.25%;
-  height: 100.25%;
-  border-radius: 4px;
-  opacity: 1;
-  justify-content: center;
-  align-items: start;
-  text-align: left;
-  padding: 0rem 1rem; */
+  padding: 2rem 2rem 4rem 2rem;
+  width: 60%;
+  gap: 2.5rem;
 }
 
-/* The Close Button */
+.modal__header {
+  gap: 0.5rem;
+}
+
 .modal__close-btn {
+  align-self: flex-end;
 }
 
-.close {
-  font-size: 1.25rem;
-  stroke-width: 1rem;
+.modal__close-icon {
+  stroke-width: 4rem;
 }
 
-.close:hover,
-.close:focus {
-  /* text-decoration: none; */
+.modal__link-btn {
+  align-self: flex-start;
 }
 
-.modal__title {
+.modal__link {
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.modal__link {
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.modal__link:hover {
+  color: var(--beige);
+}
+
+.modal__list {
+  gap: 0.25rem;
+}
+
+.modal__list-item {
+  list-style: disc;
+  list-style-position: inside;
+}
+
+@media screen and (max-width: 992px) {
+  .modal__content {
+    width: 85%;
+  }
 }

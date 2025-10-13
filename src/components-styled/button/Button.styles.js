@@ -45,7 +45,6 @@ export const ButtonSolid = styled(StyledButton)`
 
 export const ButtonSolidRed = styled(ButtonSolid)`
   background-color: var(--dark-pink);
-  padding: 1px 2px;
 
   border: 3.5px solid var(--dark-pink);
 
