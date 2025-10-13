@@ -1,4 +1,4 @@
-import { StyledButton, BasicButton, BasicButtonLightGreen, CardButton, ButtonSolid } from "./Button.styles";
+import { StyledButton, BasicButton, BasicButtonLightGreen, CardButton, ButtonSolid, ButtonSolidRed } from "./Button.styles";
 
 export default StyledButton;
-export { BasicButton, BasicButtonLightGreen, CardButton, ButtonSolid };
+export { BasicButton, BasicButtonLightGreen, CardButton, ButtonSolid, ButtonSolidRed };
