@@ -35,8 +35,9 @@ function Modal({ project, activeId, setActiveId, generateCategories }) {
         }}
       >
         <header className="flex flex__column modal__header">
-          <ButtonSolidRed aria-label="Stäng" onClick={closeModal} className="modal__close-btn">
+          <ButtonSolidRed aria-label="Stäng" onClick={closeModal} className="modal__close-btn flex">
             <IoClose className="modal__close-icon" />
+            Stäng
           </ButtonSolidRed>
           <h3 className="heading-3 modal__title">{project.title}</h3>
           <p className="body cards-list__desc2">{project.descriptionLong}</p>
