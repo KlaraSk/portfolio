@@ -12,6 +12,9 @@ function ContactForm({ isSent, setIsSent }) {
   // Regular expression from MDN for email validation as per HTML specification.
   const emailRegExp = /^[\w.!#$%&'*+/=?^`{|}~-]+@[a-z\d-]+(?:\.[a-z\d-]+)*$/i;
 
+  // Regular expression from ChatGPT for name validation.
+  const nameRegExp = /^[A-Za-zÀ-ÖØ-öø-ÿ' -]{2,50}(?: [A-Za-zÀ-ÖØ-öø-ÿ' -]{2,50})*$/;
+
   // React form validator
   const {
     register,
@@ -55,7 +58,11 @@ function ContactForm({ isSent, setIsSent }) {
           className="contact__input body"
           type="text"
           required
-          {...register("user_name", { required: "Fyll i ett namn", minLength: 3 })}
+          {...register("user_name", {
+            required: "Fyll i ett namn",
+            minLength: { value: 3, message: "Namnet måste vara minst 3 tecken" },
+            pattern: { value: nameRegExp, message: "Namnet får endast innehålla bokstäver." },
+          })}
         />
       </label>
       <label className="contact__label">
