@@ -52,7 +52,7 @@ function CvPage() {
             <ul>
               <li className="body cv-page__list-item-bullet">B-körkort</li>
               <li className="body cv-page__list-item-bullet">
-                <NavLink to={"/kontakt"} className={"font-color-beige"}>
+                <NavLink to={"/kontakt"} onClick={() => window.scrollTo(0, 0)} className={"font-color-beige"}>
                   Kontakta mig för referenser
                 </NavLink>
               </li>

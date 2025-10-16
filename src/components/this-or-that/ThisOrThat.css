@@ -30,7 +30,7 @@ input[type="range"]::-webkit-slider-thumb {
   height: 15px;
   width: 15px;
   margin-top: -7px;
-  background: url(src/assets/heart.png);
+  background: url("/heart.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
