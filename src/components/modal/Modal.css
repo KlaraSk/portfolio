@@ -27,6 +27,8 @@
 
 .modal__close-btn {
   align-self: flex-end;
+  align-items: center;
+  gap: 0.25rem;
 }
 
 .modal__close-icon {
